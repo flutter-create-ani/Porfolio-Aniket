@@ -1,15 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./index.css" type="text/css" rel="stylesheet" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./index.css" rel="stylesheet" />
     <title>Aniket Kumar</title>
-</head>
-<body>
-    <div id="root">
-        
-    </div>
+
+    <!-- ✅ Avoid React Router 404s on GitHub Pages -->
+    <script>
+      // Redirect all requests to index.html for client-side routing
+      if (
+        location.hostname.endsWith("github.io") &&
+        location.pathname !== "/Porfolio-Aniket/" &&
+        !location.pathname.startsWith("/Porfolio-Aniket/")
+      ) {
+        location.replace("/Porfolio-Aniket/");
+      }
+    </script>
+  </head>
+  <body class="bg-black text-white">
+    <div id="root"></div>
+
+    <!-- ✅ Use type="module" only if Parcel is ESM-compatible -->
     <script type="module" src="./src/App.jsx"></script>
-</body>
+  </body>
 </html>
