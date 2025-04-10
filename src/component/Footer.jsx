@@ -7,6 +7,7 @@ import {
     TwitterIcon,
     InstagramIcon
 } from 'lucide-react'
+import { Link } from 'react-scroll';
 
 
 const socialLinks = [
@@ -31,14 +32,19 @@ const Footer = () => {
             <div className="flex flex-col items-center px-4 py-12">
                 {/* app logo */}
                 <div>
-                    <a href="/" className="mb-8 flex items-center justify-center gap-5 text-white">
+                    <Link
+                        to="home"
+                        smooth={true}
+                        duration={500}
+                        className="mb-8 flex items-center justify-center gap-5 text-white cursor-pointer"
+                    >
                         <img
                             src="https://res.cloudinary.com/dyvkdwzcj/image/upload/v1709055594/logo-1_vo1dni.png"
                             className="h-8"
                             alt="Logo"
                         />
                         <span className="text-3xl font-semibold tracking-wider">Aniket Kumar</span>
-                    </a>
+                    </Link>
                     <p className="max-w-xl text-center text-lg font-medium text-white">{description}</p>
                 </div>
 
