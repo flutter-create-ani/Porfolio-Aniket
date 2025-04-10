@@ -4,7 +4,7 @@ const CircularAvatar = () => {
   const [isLoaded, setIsLoaded] = useState(false);
 
   return (
-    <div className="w-[350px] h-[350px] rounded-full overflow-hidden relative">
+    <div className="w-60 h-60 sm:w-72 sm:h-72 md:w-[300px] md:h-[300px] lg:w-[350px] lg:h-[350px] rounded-full overflow-hidden relative">
       {/* Shimmer Skeleton while loading */}
       {!isLoaded && (
         <div className="w-full h-full animate-pulse bg-gradient-to-r from-gray-700 via-gray-900 to-gray-700 rounded-full"></div>

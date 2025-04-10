@@ -44,7 +44,7 @@ const Achievements = () => {
                         href="#"
                         className="flex flex-col items-center bg-[#1B1B1B] text-[#9C9C9C] rounded-lg border border-[#2A2A2A] shadow-sm md:flex-row hover:bg-[#2A2A2A] transition duration-200"
                     >
-                        <div className="relative w-full md:w-48 h-48 flex-shrink-0 pl-4">
+                        <div className="relative w-full md:w-48 h-48 flex-shrink-0 px-4 py-4">
                             {!loaded && (
                                 <div className="w-full h-full animate-pulse bg-gradient-to-r from-gray-200 via-gray-300 to-gray-200 dark:from-gray-700 dark:via-gray-800 dark:to-gray-700 rounded-t-lg md:rounded-none md:rounded-s-lg" />
                             )}

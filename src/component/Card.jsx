@@ -107,12 +107,12 @@ const CardCarousel = () => {
             <div className="p-4 text-center">
               <h3 className="text-lg font-semibold">{card.title}</h3>
               <p className="text-sm text-gray-600 mt-2">{card.description}</p>
-              <a
+              {/* <a
                 href="#"
                 className="mt-4 inline-block rounded-full border border-gray-300 px-5 py-2 text-sm font-medium text-gray-700 hover:bg-gray-200"
               >
                 View Details
-              </a>
+              </a> */}
             </div>
           </div>
         ))}
