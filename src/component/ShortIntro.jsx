@@ -15,7 +15,7 @@ const ShortIntro = () => {
         <button
           className="bg-[#3F8E00] text-white font-mono text-base sm:text-lg font-semibold px-6 sm:px-8 py-3 sm:py-4 rounded-md
           flex items-center gap-2 
-          shadow-[0_0_15px_2px_#3F8E00] hover:brightness-110 transition-all"
+          shadow-[0_0_15px_2px_#3F8E00] hover:brightness-110 curser-pointer transition-all"
         >
           Download CV <Icon icon="tabler:chevron-right" />
         </button>
