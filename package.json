@@ -4,9 +4,8 @@
   "homepage": "https://flutter-create-ani.github.io/Porfolio-Aniket",
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build index.html",
-    "predeploy": "npm run build",
-  "deploy": "gh-pages -d dist"
+    "build": "parcel build index.html"
+   
   },
   "author": "",
   "license": "ISC",

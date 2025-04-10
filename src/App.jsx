@@ -21,23 +21,18 @@ const AppLayout = () => {
   };
 
 
-  const appRouter = createBrowserRouter(
-    [
-      {
-        path: "/",
-        element: <AppLayout />,
-        errorElement: <Error />,
-        children: [
-          {
-            path: "/",
-            element: <Body />,
-          },
-        ],
-      },
-    ],
+const appRouter = createBrowserRouter([
     {
-      basename: "/Porfolio-Aniket",
+        path: "/",
+        element: <AppLayout/>,
+        errorElement: <Error/>,
+        children: [
+            {
+                path: "/",
+                element: <Body/>
+            }
+        ]
     }
-  );
-  
-export default appRouter;
+]);
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<RouterProvider router={appRouter}/>);
