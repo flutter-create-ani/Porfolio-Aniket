@@ -6,9 +6,10 @@ const WorkedWith = () => {
         
         <div className="flex flex-wrap gap-6">
           {[
-            "School Of UI/UX",
-            "BFCET",
             "BROKI Services",
+            "School Of UI/UX",
+            "TheInfluencer",
+            
             "Specstem Digital",
             
           ].map((name) => (
@@ -16,7 +17,7 @@ const WorkedWith = () => {
               key={name}
               className="border border-[#2a2a2a] rounded-md px-6 py-4 w-48 h-20 
                          flex items-center justify-center text-center text-sm font-semibold 
-                         opacity-60 hover:opacity-100 transition text-white"
+                         opacity-60 hover:opacity-100 cursor-pointer transition text-white"
             >
               {name}
             </div>

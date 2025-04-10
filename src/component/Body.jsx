@@ -2,6 +2,8 @@ import ShortIntro from "./ShortIntro";
 import CircularAvatar from "./CircularAvatar";
 import WorkedWith from "./WorkedWith";
 import Card from "./Card";
+import Contact from "./Contact";
+import Achievements from "./Achievements";
 
 const Body = () => {
     return (
@@ -24,6 +26,14 @@ const Body = () => {
                 <p className="text-gray-400 font-mono text-lg leading-relaxed">Certifications</p>
                 <Card />
             </div>
+            <div className="px-20 py-20">
+            <p className="text-gray-400 font-mono text-lg leading-relaxed">Achievements</p>
+                <Achievements/>
+            </div>
+            <div className="px-20 py-20">
+                <Contact/>
+            </div>
+            
         </div>
     );
 };

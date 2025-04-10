@@ -7,8 +7,7 @@ dist
 # Node dependencies
 node_modules
 
-# PostCSS config (optional — only if you don't want to track it)
-.postcssrc
+
 
 # System files
 .DS_Store
