@@ -1,15 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./index.css" type="text/css" rel="stylesheet" />
-    <title>Aniket Kumar</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="./index.css" type="text/css" rel="stylesheet" />
+  <title>Aniket Kumar</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      padding-top: 100px;
+    }
+
+    .name {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .progress-bar-container {
+      width: 300px;
+      height: 10px;
+      background-color: #e0e0e0;
+      margin: 0 auto;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+
+    .progress-bar {
+      width: 60%; /* you can animate this with JS if needed */
+      height: 100%;
+      background-color: black;
+    }
+  </style>
 </head>
 <body>
-    <div id="root">
-        <h1> Not Rendered</h1>
+  <div id="root">
+    <div class="name">Aniket Kumar</div>
+    <div class="progress-bar-container">
+      <div class="progress-bar"></div>
     </div>
-    <script type="module" src="./src/App.jsx"></script>
+  </div>
+
+  <script type="module" src="./src/App.jsx"></script>
 </body>
 </html>
