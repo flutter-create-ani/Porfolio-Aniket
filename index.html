@@ -1,46 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="./index.css" type="text/css" rel="stylesheet" />
-  <title>Aniket Kumar</title>
-  <style>
-    body {
-      font-family: sans-serif;
-      text-align: center;
-      padding-top: 100px;
-    }
-
-    .name {
-      font-size: 24px;
-      margin-bottom: 20px;
-    }
-
-    .progress-bar-container {
-      width: 300px;
-      height: 10px;
-      background-color: #e0e0e0;
-      margin: 0 auto;
-      border-radius: 5px;
-      overflow: hidden;
-    }
-
-    .progress-bar {
-      width: 60%; /* you can animate this with JS if needed */
-      height: 100%;
-      background-color: black;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./index.css" type="text/css" rel="stylesheet" />
+    <title>Aniket Kumar</title>
 </head>
-<body>
-  <div id="root">
-    <div class="name">Aniket Kumar</div>
-    <div class="progress-bar-container">
-      <div class="progress-bar"></div>
-    </div>
-  </div>
 
-  <script type="module" src="./src/App.jsx"></script>
+<body>
+    <div id="root">
+        <div class="flex flex-col items-center justify-center gap-4 h-screen">
+            <div class="w-24 h-24 rounded-full bg-gray-300 animate-pulse overflow-hidden">
+                <img src="https://media.licdn.com/dms/image/v2/D5622AQGeUQsx_H6WCQ/feedshare-shrink_2048_1536/B56ZXvm6p9GcAs-/0/1743481713916?e=1747267200&v=beta&t=tJMZ7kaxJ3nF0UdpAOFvM72SivlGYty3KYZHiax5zdY"
+                alt="Profile" class="w-full h-full object-cover" />
+              </div>
+              
+            <h1 class="text-2xl font-bold text-gray-800">Aniket Kumar</h1>
+            <div class="w-72 h-2 bg-gray-300 rounded overflow-hidden">
+              <div class="h-full bg-black animate-pulse w-full"></div>
+            </div>
+          </div>
+          
+
+    </div>
+    <script type="module" src="./src/App.jsx"></script>
 </body>
+
 </html>
