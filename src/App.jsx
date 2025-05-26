@@ -5,6 +5,8 @@ import { createBrowserRouter, RouterProvider, Outlet } from "react-router";
 import Header from "./component/Header";
 import Body from "./component/Body";
 import Footer from "./component/Footer";
+import ProgressBar from "./framerComponent/ProgressBar";
+import ExitAndEnterAnimation from "./framerComponent/ExitAndEnterAnimation";
 
 
 
@@ -30,6 +32,14 @@ const appRouter = createBrowserRouter([
             {
                 path: "/",
                 element: <Body/>
+            }, 
+            {
+              path: "/progress-bar",
+              element: <ProgressBar/>
+            },
+            {
+              path: "exit-and-enter-animation",
+              element: <ExitAndEnterAnimation/>
             }
         ]
     }
