@@ -1,4 +1,5 @@
 import { Icon } from "@iconify/react";
+import { motion } from "framer-motion";
 
 const ShortIntro = () => {
   return (
@@ -12,13 +13,19 @@ const ShortIntro = () => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <button
+        <motion.button
+        whileHover={{
+          scale: [null, 1.1]
+        }}
+        whileTap={{
+          scale: 0.7
+        }}
           className="bg-[#3F8E00] text-white font-mono text-base sm:text-lg font-semibold px-6 sm:px-8 py-3 sm:py-4 rounded-md
           flex items-center gap-2 
-          shadow-[0_0_15px_2px_#3F8E00] hover:brightness-110 curser-pointer transition-all"
+          shadow-[0_0_15px_2px_#3F8E00] hover:cursor-pointer"
         >
           Download CV <Icon icon="tabler:chevron-right" />
-        </button>
+        </motion.button>
       </a>
     </div>
   );
